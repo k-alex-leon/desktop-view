@@ -23,11 +23,11 @@ const DESKTOP_ICONS = [
 
 export default function Desktop() {
   return (
-    <div className="absolute h-full w-full bg-windows bg-no-repeat bg-cover p-4 select-none">
+    <div className="absolute h-screen w-full bg-windows bg-no-repeat bg-cover p-4 select-none">
       <div className="grid grid-cols-1 w-1/6">
         {DESKTOP_ICONS.map((element, inx) => (
           <button key={inx} className="flex flex-col items-center">
-            <img className="h-3/5 drop-shadow-xl" src={element.icon} />
+            <img className="h-[40%] drop-shadow-xl" src={element.icon} />
             <span>{element.name}</span>
           </button>
         ))}

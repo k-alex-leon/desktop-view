@@ -18,7 +18,7 @@ function App() {
   return (
     <main
       onMouseMove={handleMouseMove}
-      className="fixed justify-center items-center h-full w-full"
+      className="fixed justify-center items-center h-full w-full overflow-auto"
     >
       {/* <h1 className="font-bold">Hello</h1>
       <FaWindows /> */}

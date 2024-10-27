@@ -3,7 +3,7 @@ import { useStore } from "./useStore";
 
 export default function Window(props) {
   const windowRef = useRef();
-  const [windowCoords, setWindowCoords] = useState({ x: 0, y: 0 });
+  const [windowCoords, setWindowCoords] = useState({x: 0, y: 0});
   const mouseCoords = useStore((state) => state.mousePos);
   let { x, y } = mouseCoords;
   const [isOpen, setOpen] = useState(true);
@@ -43,7 +43,8 @@ export default function Window(props) {
     <div
       ref={windowRef}
       // onMouseUp={handleMouseUp}
-      className="absolute w-2/3 h-4/5 bg-slate-300 rounded-lg"
+      // style={{ top: windowCoords.y, left: windowCoords.x }}
+      className="absolute top-0 right-10 w-2/3 h-2/3 bg-slate-300 rounded-lg"
     >
       <div className="flex">
         <div
