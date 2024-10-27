@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage : {
-        'windows' : 'url(./images/windows-wallpaper.jpg)'
+        'windows' : 'url(/images/windows-wallpaper.jpg)'
       },
     },
   },

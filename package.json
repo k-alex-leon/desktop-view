@@ -1,12 +1,12 @@
 {
+  "homepage": "https://k-alex-leon.github.io/desktop-view",
   "name": "desktop-view",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://k-alex-leon.github.io/desktop-view",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -31,6 +31,6 @@
     "globals": "^15.11.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
-    "vite": "^5.4.9"
+    "vite": "^5.4.10"
   }
 }
